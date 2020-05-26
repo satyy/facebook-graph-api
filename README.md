@@ -1,4 +1,4 @@
-# facebook-graph-api
+# facebook-graph-api & COVID-19 Tracker(INDIA)
 - Working with Facebook Graph API. 
 - Sample application to publish current covid19 stats for configured places(India) to Facebook Group.
 - This application expose REST API's to get the current covid19 stats of INDIA as well as Publish stats for few configured places to facebook group.
