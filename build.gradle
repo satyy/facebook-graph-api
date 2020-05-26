@@ -1,0 +1,42 @@
+buildscript {
+    ext {
+        springBootVersion = '2.3.0.RELEASE'
+        lombokVersion = '1.18.10'
+    }
+
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+plugins {
+    id 'java'
+}
+
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.satyy'
+version = '1.0.0'
+
+sourceCompatibility = 11.0
+targetCompatibility = 11.0
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web'
+    implementation group: 'org.projectlombok', name: 'lombok', version: lombokVersion
+
+    annotationProcessor group: 'org.projectlombok', name: 'lombok', version: lombokVersion
+
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+}
+
+test {
+    useJUnitPlatform()
+}
