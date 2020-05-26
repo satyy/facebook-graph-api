@@ -15,6 +15,15 @@
 2. <b>POST</b>     /covid/fb/v1/group                       - publish the information to configured facebook group.
 </pre>
 
+## Configuration
+- The app configuration is externalized and currently added to `application.properties` present in resource path.
+- To publish stats to facebook group, below two configuration should be configured
+   1. fb.api.group.nodeId - The facebook group node id for the group to which has data has to be published.
+   2. fb.api.group.accessToken - Access token with permission `publish_to_groups`. The user should have admin priviledge in order to pu blish to group.
+
+- Next, you can also configure the intrested districts in India for which the stats will be published. 
+   1. `fb.post.district.names`, this can take multiple distict names all separated by comma.
+
 ## Build and Run
 1. Checkout repo.
 2. run cmd `sh run-app.sh`
