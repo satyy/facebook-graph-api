@@ -1,5 +1,5 @@
 # facebook-graph-api
-- Working with Facebook Graph Api. 
+- Working with Facebook Graph API. 
 - Sample application to publish current covid19 stats for configured places(India) to Facebook Group.
 - This application expose REST API's to get the current covid19 stats of INDIA as well as Publish stats for few configured places to facebook group.
 - Also, there is a scheduler (with cron expression configuration) which periodically runs and publish stats to facebook group.
@@ -11,7 +11,7 @@
 ## API's exposed
 
 <pre>
-1. <b>GET</b>      /covid/tracker/v1/inida                  - get detail information about current covid19 stats for all the states and districts in India.
+1. <b>GET</b>      /covid/tracker/v1/india                  - get detail information about current covid19 stats for all the states and districts in India.
 2. <b>POST</b>     /covid/fb/v1/group                       - publish the information to configured facebook group.
 </pre>
 
@@ -24,6 +24,10 @@
 
 - Next, you can also configure the intrested districts in India for which the stats will be published. 
    1. `fb.post.district.names`, this can take multiple district names all separated by comma.
+
+- Apart from API, there is also a scheduler running, which fetch data from server and publish the stats to the fb group after every configured interval of time. 
+The time when to run scheduler can be configured as cron expression and currently, it is configured to run at the start of every hour.
+Details can be found in file `com.satyy.fb.scheduler.PublishScheduler.java`
 
 ## Build and Run
 1. Checkout repo.
