@@ -24,6 +24,7 @@
 
 - Next, you can also configure the intrested districts in India for which the stats will be published. 
    1. `fb.post.district.names` - this can take multiple district names all separated by comma.
+       e.g : `fb.post.district.names=bengaluru, mumbai, kolkata`
 
 - Apart from API, there is also a scheduler running, which fetch data from server and publish the stats to the fb group after every configured interval of time. 
 The time when to run scheduler can be configured as cron expression and currently, it is configured to run at the start of every hour.
