@@ -10,7 +10,6 @@
 
 ## API's exposed
 
-## Endpoints exposed
 <pre>
 1. <b>GET</b>      /covid/tracker/v1/inida                  - get detail information about current covid19 stats for all the states and districts in India.
 2. <b>POST</b>     /covid/fb/v1/group                       - publish the information to configured facebook group.
