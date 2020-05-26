@@ -37,4 +37,5 @@ Details can be found in file `com.satyy.fb.scheduler.PublishScheduler.java`
 ## Port Used 
 The appication is configured to run on port **8888** which can be changed by modifying **server.port** in application.properties 
 
+# NOTE
 ***This application uses external endpoint to get the current covid 19 stats https://api.covidindiatracker.com/state_data.json which is availabe on the Internet***
