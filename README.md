@@ -19,7 +19,8 @@
 - The app configuration is externalized and currently added to `application.properties` present in resource path.
 - To publish stats to facebook group, below two configuration should be configured
    1. fb.api.group.nodeId - The facebook group node id for the group to which has data has to be published.
-   2. fb.api.group.accessToken - Access token with permission `publish_to_groups`. The user should have admin priviledge in order to pu blish to group.
+   2. fb.api.group.accessToken - Access token with permission `publish_to_groups`. The user should have admin priviledge in order to 
+   publish to group.
 
 - Next, you can also configure the intrested districts in India for which the stats will be published. 
    1. `fb.post.district.names`, this can take multiple district names all separated by comma.
