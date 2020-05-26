@@ -22,11 +22,11 @@
    2. fb.api.group.accessToken - Access token with permission `publish_to_groups`. The user should have admin priviledge in order to pu blish to group.
 
 - Next, you can also configure the intrested districts in India for which the stats will be published. 
-   1. `fb.post.district.names`, this can take multiple distict names all separated by comma.
+   1. `fb.post.district.names`, this can take multiple district names all separated by comma.
 
 ## Build and Run
 1. Checkout repo.
 2. run cmd `sh run-app.sh`
 
-### Port Used 
+## Port Used 
 The appication is configured to run on port **8888** which can be changed by modifying **server.port** in application.properties 
